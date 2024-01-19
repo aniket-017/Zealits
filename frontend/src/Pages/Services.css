@@ -1,0 +1,69 @@
+
+#services {
+   
+    padding: 50px 20px;
+    padding-top: 100px;
+    text-align: center;
+    /* background-color: #f8f8f8;  */
+    /* Light background color */
+    color: #333333; /* Dark text color */
+}
+
+.services-content {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 0 auto;
+}
+
+.services-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004080; /* Dark blue heading color */
+}
+
+.services-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service1 {
+    flex: 30%; /* Two services in a row for larger screens */
+    margin: 15px;
+    padding: 20px;
+ 
+    border-radius: 8px;
+    
+    text-align: left;
+    /* transition: box-shadow 0.3s ease; */
+}
+
+.service:hover {
+    background: (to right, rgb(239, 254, 247), rgb(103, 198, 251));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+.service1:hover {
+    background: (to right, rgb(239, 254, 247), rgb(103, 198, 251));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #004080; /* Dark blue heading color */
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service ul li {
+    margin-bottom: 8px;
+}

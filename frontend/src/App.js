@@ -4,6 +4,7 @@ import Navbar from "./Layouts/Header/Navbar.js"
 import "./App.css"
 import Home from "./Pages/Home.js"
 import AboutUs from "./Pages/AboutUs.js"
+import Services from "./Pages/Services.js"
 import ContactUs from "./Pages/ContactUs.js"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,6 +16,7 @@ const App = () => {
     <Navbar/>
     <Home />
     <AboutUs />
+    <Services />
     <ContactUs />
     </div>
     
