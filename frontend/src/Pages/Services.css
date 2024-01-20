@@ -1,69 +1,202 @@
+/* Services.css */
 
 #services {
-   
-    padding: 50px 20px;
-    padding-top: 100px;
+    background: #f4f4f4;
+    padding: 40px 0;
+  }
+  
+  .services-content {
     text-align: center;
-    /* background-color: #f8f8f8;  */
-    /* Light background color */
-    color: #333333; /* Dark text color */
-}
-
-.services-content {
-    padding-left: 150px;
-    padding-right: 150px;
-    margin: 0 auto;
-}
-
-.services-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #004080; /* Dark blue heading color */
-}
-
-.services-description {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.services-list {
+  }
+  
+  .services-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+  }
+  
+  .card-section {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service1 {
-    flex: 30%; /* Two services in a row for larger screens */
-    margin: 15px;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
- 
-    border-radius: 8px;
-    
-    text-align: left;
-    /* transition: box-shadow 0.3s ease; */
-}
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Card Hover Effect */
+  .section-2 {
+    background: #1d1d1d;
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+  }
+  
+  .section-2 .figure {
+    background: #ffffff;
+    color: #1d1d1d;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin: 0 20px;
+  }
+  
+  .section-2 .figure img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .section-2 .figure figcaption {
+    position: absolute;
+    background-color: #efefef;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    padding: 5px 20px;
+    transform: translate(-50%, -50%);
+    line-height: 1.1em;
+    overflow: hidden;
+    height: 44px;
+    width: 150px;
+  }
+  
+  .section-2 .figure h3 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .section-2 .figure h3.hover {
+    color: #efefef;
+    font-weight: 700;
+  }
+  
+  .section-2 .figure a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .section-2 .figure .title {
+    transform: translateY(50%);
+  }
+  
+  .section-2 .figure .hover {
+    transform: translateY(50%);
+  }
+  
+  .section-2 .figure:hover > img,
+  .section-2 .figure.hover > img {
+    opacity: 0;
+  }
+  
+  .section-2 .figure:hover figcaption,
+  .section-2 .figure.hover figcaption {
+    background-color: #1d1d1d;
+  }
+  
+  .section-2 .figure:hover .title,
+  .section-2 .figure.hover .title {
+    transform: translateY(-150%);
+  }
+  
+  .section-2 .figure:hover .hover,
+  .section-2 .figure.hover .hover {
+    transform: translateY(-50%);
+  }
+  
 
-.service:hover {
-    background: (to right, rgb(239, 254, 247), rgb(103, 198, 251));
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-}
-.service1:hover {
-    background: (to right, rgb(239, 254, 247), rgb(103, 198, 251));
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-}
+  .section-4 {
+    background: #ffffff;
+    color: #efefef;
+  }
+  
+  .section-4 .figure {
+    height: 500px;
+    width: 400px;
+    background: yellow;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+  }
+  
+  .section-4 .figure img {
+    vertical-align: top;
+    max-width: 100%;
+    transition: opacity 0.3s ease-in-out; /* Added transition for opacity */
+  }
+  
+  .section-4 .figure .details {
+    color:black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    display: table;
+    padding: 0 20px;
+    transform: translate(-50%, -50%);
+   opacity: 0;  
+    transition: 3s ease-in; 
+    transition: 0s ease-out; 
+    /* transition: width 2s, height 4s; */
+  }
 
-.service h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #004080; /* Dark blue heading color */
-}
+  .details>ul{
+    list-style-type: none;
+  }
+  
+  .section-4 .figure:hover .details {
+    opacity: 1;
+  }
 
-.service ul {
-    list-style: none;
-    padding: 0;
-}
+  .section-4 .figure .heading {
+    color: black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    display: table;
+    padding: 0 20px;
+    transform: translate(-50%, -50%);
+   opacity: 1;  
+    transition: 0.3s ease-in-out; 
+  }
 
-.service ul li {
-    margin-bottom: 8px;
-}
+  .heading>h3{
+    font-size: 50px;
+  }
+
+  .section-4 .figure:hover .heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    display: table;
+    padding: 0 20px;
+    transform: translate(-50%, -50%);
+   opacity: 0;  
+    /* transition: 0.5s ease-in-out;  */
+  }
+
+
+.picture{
+    width:100px;
+  }
