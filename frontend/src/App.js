@@ -6,6 +6,7 @@ import Home from "./Pages/Home.js"
 import AboutUs from "./Pages/AboutUs.js"
 import Services from "./Pages/Services.js"
 import ContactUs from "./Pages/ContactUs.js"
+import Projects from "./Pages/Projects.js"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -17,6 +18,7 @@ const App = () => {
     <Home />
     <AboutUs />
     <Services />
+    {/* <Projects /> */}
     <ContactUs />
     </div>
     
