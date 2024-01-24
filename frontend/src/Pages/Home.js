@@ -20,7 +20,7 @@ const Home = () => {
           <Cursor /> <br/> ensuring unparalleled customer satisfaction and fostering unwavering client loyalty for an elevated
           digital experience."
         </div>
-        <div className="col col2">here image will be added</div>
+        <div className="col col2"></div>
       </div>
    
   

@@ -9,7 +9,7 @@ import "./ContactUs.css";
 
 const ContactUs = () => {
 
-  const iconStyle = { color: '#1da9c0', padding: '12px' }; 
+  const iconStyle = { color: 'white', padding: '12px' }; 
   return (
     <div>
       <section>
